@@ -37,7 +37,7 @@ namespace TimeTrackerLite
             .ConfigureRunner(rb => rb
             .AddPostgres()
             // Set the connection string
-            .WithGlobalConnectionString(DBSettings.ToDBConnectionString())
+            .WithGlobalConnectionString(DBSettings.ToPgsqlConnectionString())
             // Define the assembly containing the migrations
             .ScanIn(typeof(Startup).Assembly).For.Migrations());
 

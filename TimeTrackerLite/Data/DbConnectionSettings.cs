@@ -35,7 +35,7 @@ namespace TimeTrackerLite.Data
                     {
                         Name = "AppData",
                         ProviderName = ProviderName.PostgreSQL,
-                        ConnectionString = _dbSettings.ToDBConnectionString()
+                        ConnectionString = _dbSettings.ToPgsqlConnectionString()
                     };
             }
         }
